@@ -1,0 +1,32 @@
+# Python - Backend
+backend_flask/venv_tf/
+backend_flask/__pycache__/
+backend_flask/*.pyc
+backend_flask/.env
+# CÂN NHẮC BỎ QUA FILE MODEL NẾU NÓ LỚN
+# backend_flask/TrafficSign_Improved_Best_Model.keras
+
+# Node.js - Frontend
+frontend_react_new/node_modules/
+frontend_react_new/build/
+frontend_react_new/.pnp
+frontend_react_new/.pnp.js
+frontend_react_new/coverage/
+frontend_react_new/.DS_Store
+frontend_react_new/npm-debug.log*
+frontend_react_new/yarn-debug.log*
+frontend_react_new/yarn-error.log*
+frontend_react_new/.env.local
+frontend_react_new/.env.development.local
+frontend_react_new/.env.test.local
+frontend_react_new/.env.production.local
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+*~
+
+# Windows specific
+Thumbs.db
+desktop.ini
