@@ -30,3 +30,12 @@
     npm start
 
     hiện ra dòng successfully và cửa sổ react được mở ra
+
+####     .TRONG TRƯỜNG HỢP CÓ SẴN DOCKER TRÊN MÁY.  ####
+
+1.Mở sẵn DOCKER Destops
+2.Clone từ link github về
+3.Di chuyển vào thư mục project vừa clone
+4.Chạy lệnh docker compose up --build
+5.Sau khi thấy tên project hiện lên trong cửa sổ DOCKER Destops,Bấm Action để khởi chạy 2 file frontend và backend sau đó truy cập
+trang frontend(http://localhost:3000/) và tải ảnh lên test
