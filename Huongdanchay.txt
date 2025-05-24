@@ -2,6 +2,8 @@
 
 ####     .TRONG TRƯỜNG HỢP CHẠY THỦ CÔNG KHI KHÔNG CÓ SẴN DOCKER TRÊN MÁY.  ####
 
+Đầu tiên clone Project từ github về:https://github.com/Andy-Nguy/NhanDienBienBaoGiaoThong.git
+
 # I.Phía backend_flask #
 
 1.Di chuyển vào thư mục backend(cd backend_flask)
