@@ -1,7 +1,7 @@
 
 
 ####     .TRONG TRƯỜNG HỢP CHẠY THỦ CÔNG KHI KHÔNG CÓ SẴN DOCKER TRÊN MÁY.  ####
-
+*Lưu ý: máy phải dùng phiên bản 3.10 trở xuống vì bản mới nhất 3.13 chưa có thư viện tensorflow
 Đầu tiên clone Project từ github về:https://github.com/Andy-Nguy/NhanDienBienBaoGiaoThong.git
 
 # I.Phía backend_flask #
