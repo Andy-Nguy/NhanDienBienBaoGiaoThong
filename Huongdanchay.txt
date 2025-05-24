@@ -1,0 +1,32 @@
+
+
+####     .TRONG TRƯỜNG HỢP CHẠY THỦ CÔNG KHI KHÔNG CÓ SẴN DOCKER TRÊN MÁY.  ####
+
+# I.Phía backend_flask #
+
+1.Di chuyển vào thư mục backend(cd backend_flask)
+2.Tạo và Kích hoạt Môi trường ảo Python bằng 2 lệnh sao
+    python -m venv venv_manual (# Tạo môi trường ảo, ví dụ tên là venv_manual)
+    .\venv_manual\Scripts\activate
+3.Lần lượt tải các thư viện cần thiết 
+    pip install Flask Flask-CORS tensorflow opencv-python pandas numpy Pillow(phần này chạy lâu vì có nhiều thư viện cần phải cài)
+
+4.Chạy file app.py 
+    python app.py
+
+    Khi chạy thành công sẽ hiện ra: Model đã được tải thành công từ: TrafficSign_Improved_Best_Model.keras
+                                    Signnames CSV đã được tải thành công.
+                                    * Debugger is active!
+                                    * Debugger PIN: 138-014-729
+    mở terminal mới và vẫn để nguyên file app.py chạy(khi muốn tắt Ctrl+C)
+
+# II.Phía frontend_react_new Thiết lập và Chạy Frontend (ReactJS)
+
+1.Mở một terminal mới và trỏ đến thư mục frontend_react_new 
+    cd frontend_react_new (# Hoặc tên thư mục frontend của bạn)
+2.Cài đặt các gói phụ thuộc cho Frontend
+    npm install
+3.Chạy ứng dụng React:
+    npm start
+
+    hiện ra dòng successfully và cửa sổ react được mở ra
