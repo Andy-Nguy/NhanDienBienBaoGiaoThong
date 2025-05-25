@@ -1,0 +1,261 @@
+--- General Body & Font Styles ---
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fa; /* Màu nền nhẹ nhàng hơn */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center; /* Căn giữa container trên màn hình lớn */
+  min-height: 100vh;
+  align-items: flex-start; /* Căn container lên trên */
+  padding-top: 20px; /* Khoảng cách từ top */
+  box-sizing: border-box;
+}
+
+/* --- Main Container --- */
+.container {
+  width: 100%;
+  max-width: 700px; /* Giới hạn chiều rộng tối đa */
+  margin: 20px;
+  padding: 30px 40px; /* Tăng padding */
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow mềm mại hơn */
+  border-radius: 12px; /* Bo góc lớn hơn */
+  box-sizing: border-box;
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e9ecef; /* Đường kẻ rõ ràng hơn */
+}
+
+header h1 {
+  color: #0056b3; /* Màu xanh dương đậm hơn, chuyên nghiệp */
+  margin: 0;
+  font-size: 2.2em; /* Tăng kích thước font */
+  font-weight: 600;
+}
+
+/* --- Main Content Area --- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Upload Section --- */
+.upload-section {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các nút xuống dòng trên màn hình nhỏ */
+  gap: 15px;
+  align-items: center;
+  justify-content: center; /* Căn giữa các nút */
+  width: 100%;
+}
+
+.upload-button,
+.submit-button,
+.clear-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px; /* Bo góc vừa phải */
+  cursor: pointer;
+  font-size: 1em; /* Kích thước font tương đối */
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  text-align: center;
+  min-width: 150px; /* Chiều rộng tối thiểu cho nút */
+}
+
+.upload-button:hover,
+.submit-button:hover:not(:disabled),
+.clear-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Hiệu ứng nhấc lên khi hover */
+}
+
+.submit-button:disabled {
+  background-color: #adb5bd; /* Màu xám hơn cho nút bị vô hiệu hóa */
+  cursor: not-allowed;
+  transform: none;
+}
+
+.clear-button {
+  background-color: #e74c3c; /* Màu đỏ nổi bật hơn */
+}
+.clear-button:hover {
+  background-color: #c0392b;
+}
+
+/* --- Error Message --- */
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: calc(100% - 30px); /* Chiều rộng với padding */
+  box-sizing: border-box;
+  font-size: 0.95em;
+}
+
+/* --- Image Preview --- */
+.image-preview-container {
+  margin-top: 25px;
+  text-align: center;
+  border: 2px dashed #ced4da; /* Border dashed rõ hơn */
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Nền nhẹ nhàng cho preview */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-preview-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #495057; /* Màu chữ tối hơn */
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 350px; /* Tăng chiều cao tối đa */
+  margin-bottom: 25px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6; /* Border nhẹ cho ảnh */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Shadow nhẹ cho ảnh */
+}
+
+/* --- Loading Indicator --- */
+.loading-indicator {
+  margin: 25px 0;
+  font-style: italic;
+  color: #007bff;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Basic CSS Spinner */
+.loading-indicator::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 3px solid rgba(0, 123, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+
+/* --- Prediction Results --- */
+.prediction-results {
+  margin-top: 35px;
+  padding: 25px 30px; /* Tăng padding */
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #ffffff; /* Nền trắng cho kết quả */
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07); /* Shadow tinh tế */
+}
+
+.prediction-results h2 {
+  text-align: center;
+  color: #198754; /* Màu xanh lá đậm hơn */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5em; /* Tăng kích thước font */
+  font-weight: 600;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 12px 0; /* Tăng padding */
+  border-bottom: 1px solid #f1f3f5; /* Đường kẻ nhạt hơn */
+  font-size: 1em; /* Kích thước font dễ đọc */
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-label {
+  font-weight: 600; /* In đậm hơn */
+  color: #495057;
+  margin-right: 15px;
+  flex-shrink: 0; /* Ngăn label bị co lại */
+}
+
+.result-value {
+  color: #212529; /* Màu chữ chính đậm hơn */
+  text-align: right;
+  word-break: break-word; /* Ngăn text dài làm vỡ layout */
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 2px solid #e9ecef;
+  font-size: 0.9em;
+  color: #6c757d; /* Màu xám cho footer */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .upload-button,
+  .submit-button,
+  .clear-button {
+    width: 100%; /* Nút chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    margin-bottom: 10px; /* Khoảng cách giữa các nút khi xuống dòng */
+  }
+  .upload-section {
+    flex-direction: column; /* Xếp các nút theo chiều dọc */
+  }
+
+  .result-item {
+    flex-direction: column; /* Xếp label và value theo chiều dọc */
+    align-items: flex-start; /* Căn trái label và value */
+    text-align: left;
+  }
+  .result-value {
+    text-align: left;
+    margin-top: 5px; /* Khoảng cách nhỏ giữa label và value */
+  }
+}
