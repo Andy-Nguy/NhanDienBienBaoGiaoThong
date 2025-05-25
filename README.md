@@ -79,7 +79,7 @@ BE_TEST/
 2.  **Git:** (Tùy chọn, để clone repository).
 
 ### Cho Chạy Thủ công:
-1.  **Python:** Phiên bản 3.9+ (ví dụ: 3.10, 3.11). Đảm bảo `python` và `pip` đã được thêm vào PATH.
+1.  **Python:** Phiên bản 3.9+ (ví dụ: 3.10, 3.11). Đảm bảo `python` và `pip` đã được thêm vào PATH.(lưu ý:Phiên bản mới nhất 3.13.x chưa có thư viện tensorflow phù hợp nên dùng Python 3.10.x)
 2.  **Node.js và npm:** Node.js phiên bản LTS (ví dụ: 18.x hoặc 20.x). Đảm bảo `node` và `npm` đã được thêm vào PATH.
 3.  **Git:** (Tùy chọn, để clone repository).
 
