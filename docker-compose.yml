@@ -1,0 +1,32 @@
+
+services:
+  backend:
+    build:
+      context: ./backend_flask # Đường dẫn đến thư mục chứa Dockerfile của backend
+      dockerfile: Dockerfile
+    container_name: traffic_sign_backend
+    ports:
+      - "5000:5000" # Map port 5000 của host vào port 5000 của container backend
+    volumes:
+      # Volume để code thay đổi trên máy host được cập nhật vào container (tiện cho development)
+      # Bỏ comment nếu muốn:
+       - ./backend_flask:/app
+    environment:
+      # Thêm các biến môi trường nếu backend cần (ví dụ: FLASK_ENV=development)
+      - PYTHONUNBUFFERED=1 # Để log Python xuất hiện ngay lập tức
+    restart: unless-stopped # Tự động khởi động lại container nếu nó dừng (trừ khi dừng thủ công)
+
+  frontend:
+    build:
+      context: ./frontend_react_new # Đường dẫn đến thư mục chứa Dockerfile của frontend
+      dockerfile: Dockerfile
+    container_name: traffic_sign_frontend
+    ports:
+      - "3000:80" # Map port 3000 của host vào port 80 của container Nginx (frontend)
+    depends_on:
+      - backend # Frontend sẽ chỉ khởi động sau khi backend đã (cố gắng) khởi động
+    restart: unless-stopped
+    # volumes:
+      # Volume cho frontend development (nếu dùng dev server của React thay vì Nginx)
+      # - ./frontend_react_new:/app
+      # - /app/node_modules # Ngăn không cho node_modules của host ghi đè lên container
