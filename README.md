@@ -35,23 +35,42 @@
     *   Docker & Docker Compose
 
 ## Cấu trúc Project
+```text
 BE_TEST/
+├── .gitignore
+├── README.md
 ├── backend_flask/
-│ ├── TrafficSign_Improved_Best_Model.keras # File model CNN đã huấn luyện
-│ ├── app.py # File chính của ứng dụng Flask
-│ ├── signnames.csv # File mapping ClassId sang tên biển báo
-│ ├── requirements.txt # Các gói Python cần thiết cho backend
-│ ├── Dockerfile # Dockerfile cho backend
-│ └── venv_tf/ # (Nên nằm trong .gitignore) Thư mục môi trường ảo
+│   ├── TrafficSign_Improved_Best_Model.keras
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── signnames.csv
+│   └── Dockerfile
 ├── frontend_react_new/
-│ ├── public/ # Các file tĩnh cho React
-│ ├── src/ # Mã nguồn React (App.js, App.css, index.js, ...)
-│ ├── package.json # Thông tin project và dependencies của Node.js
-│ ├── Dockerfile # Dockerfile cho frontend
-│ └── node_modules/ # (Nên nằm trong .gitignore)
-├── .gitignore # Các file và thư mục Git sẽ bỏ qua
-├── docker-compose.yml # File cấu hình Docker Compose
-└── README.md # File mô tả này
+│   ├── Dockerfile
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src/
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── index.css
+│       ├── index.js
+│       ├── logo.svg
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+└── docker-compose.yml
+└── ẢnhTest
+└── Huongdanchay.txt
+└── TrainCNN_NhanBietBienBaoGiaoThong.ipynb
+
+```
 
 ## Yêu cầu Cài đặt
 
