@@ -191,7 +191,7 @@ Trong quá trình phát triển thì Project vẫn còn một số điểm chưa
 
 ![Giao diện tải ảnh lên của ứng dụng](images/image.png "Trang chủ ứng dụng")
 
-![Giao diện tải ảnh lên của ứng dụng](images/2.png "Kết quả nhận diện")
+![Giao diện tải ảnh lên của ứng dụng](images/1.png "Kết quả nhận diện")
 
 ![Giao diện tải ảnh lên của ứng dụng](images/2.png "Đánh giá mô hình")
 
