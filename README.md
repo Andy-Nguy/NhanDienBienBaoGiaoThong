@@ -185,6 +185,18 @@ Bạn sẽ cần mở hai cửa sổ terminal riêng biệt.
 Trong quá trình phát triển thì Project vẫn còn một số điểm chưa hoàn thiện,mong thầy có thể xem qua và góp ý để nhóm ghi nhận và hoàn thiện sản phẩm , hiểu bài tốt hơn
 
 
+## Demo Giao Diện Ứng Dụng
+
+Đây là giao diện chính khi người dùng tải ảnh lên:
+
+![Giao diện tải ảnh lên của ứng dụng](images/image.png "Trang chủ ứng dụng")
+
+![Giao diện tải ảnh lên của ứng dụng](images/2.png "Kết quả nhận diện")
+
+![Giao diện tải ảnh lên của ứng dụng](images/2.png "Đánh giá mô hình")
+
+
+
 
 
 #Một số lệnh 
